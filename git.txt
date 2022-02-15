@@ -1,0 +1,30 @@
+git config --global user.email "borage.tina.2014@.com"
+git init
+git add .
+git commit -m "TopicModel4J"
+git remote add origin git@github.com:soberqian/TopicModel4J.git
+git pull --rebase origin master 
+git push -u origin master
+
+
+如果报错：
+! [rejected]        master -> master (fetch first)  
+error: failed to push some refs to 'git@github.com:kangvcar/Results-Systems--PHP.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing 
+hint: to the same ref. You may want to first merge the remote changes (e.g.,  
+hint: 'git pull') before pushing again. 
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+作者：Kangvcar
+链接：https://www.jianshu.com/p/681a879745e4
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+
+解决办法：
+[root@linux1 qimo]# git pull --rebase origin master 
+[root@linux1 qimo]# git push -u origin master
+
+git commit -m "Quora Keywords Crawler"
+git remote add origin git@github.com:soberqian/Quora-Keywords-Crawler.git
+
